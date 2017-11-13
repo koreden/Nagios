@@ -1,4 +1,4 @@
-#!/bin/perl -w
+#!/usr/bin/perl -w
 #
 # usage: 
 #    check_flexlm.pl license_file
@@ -37,6 +37,7 @@ use Getopt::Long;
 use vars qw($opt_V $opt_h $opt_F $opt_t $verbose $PROGNAME);
 use FindBin;
 use lib "$FindBin::Bin";
+use lib '/usr/lib64/nagios/plugins';
 use utils qw(%ERRORS &print_revision &support &usage);
 
 $PROGNAME="check_flexlm";
@@ -57,7 +58,7 @@ GetOptions
 	 "t=i" => \$opt_t, "timeout=i"  => \$opt_t);
 
 if ($opt_V) {
-	print_revision($PROGNAME,'2.1.1');
+	print_revision($PROGNAME,'2.1.4');
 	exit $ERRORS{'OK'};
 }
 
@@ -217,7 +218,7 @@ sub print_usage () {
 }
 
 sub print_help () {
-	print_revision($PROGNAME,'2.1.1');
+	print_revision($PROGNAME,'2.1.4');
 	print "Copyright (c) 2000 Ernst-Dieter Martin/Karl DeBisschop
 
 Check available flexlm license managers

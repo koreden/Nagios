@@ -1,0 +1,5 @@
+define service {
+	use			generic-http
+	hostgroup_name		firewall-http
+	contact_groups		firewall-admins
+}

@@ -1,1 +1,27 @@
-OK - Configuration check verified
+WARNING: Warnings in config files - see log for details: /usr/local/nagios/var/nagios.configtest
+Error: Could not find any host matching 'SQL01' (config file '/usr/local/nagios/etc/objects/hosts/hostgroups.cfg', starting on line 15)
+Error: Could not find any host matching 'OwnersList8' (config file '/usr/local/nagios/etc/objects/hosts/hostgroups.cfg', starting on line 3)
+Warning: Host 'OwnersList10' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList11' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList12' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList13' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList14' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList16' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList17' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList18' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList19' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList2' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList21' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList22' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList23' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList24' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList25' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList26' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList27' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList28' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList29' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList30' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList31' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList32' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList4' has no default contacts or contactgroups defined!
+Warning: Host 'OwnersList8.BOESEMEDIA.COM' has no default contacts or contactgroups defined!

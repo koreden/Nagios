@@ -17,12 +17,15 @@ sub support();
 sub is_hostname;
 
 ## updated by autoconf
-$PATH_TO_SUDO    = "/bin/sudo";
-$PATH_TO_RPCINFO = "" ;
+$PATH_TO_SUDO    = "";
+$PATH_TO_RPCINFO = "/usr/sbin/rpcinfo" ;
 $PATH_TO_LMSTAT  = "" ;
-$PATH_TO_SMBCLIENT = "/bin/smbclient" ;
-$PATH_TO_MAILQ   = "/bin/mailq";
+$PATH_TO_SMBCLIENT = "/usr/bin/smbclient" ;
+$PATH_TO_MAILQ   = "/usr/bin/mailq";
 $PATH_TO_QMAIL_QSTAT = "";
+# Hardcoded values (autotools patch will be provided to the uptream project)
+$PATH_TO_NTPDATE = "/usr/sbin/ntpdate";
+$PATH_TO_NTPQ =  "/usr/sbin/ntpq";
 
 ## common variables
 $TIMEOUT = 15;
@@ -32,7 +35,7 @@ $TIMEOUT = 15;
 sub print_revision ($$) {
 	my $commandName = shift;
 	my $pluginRevision = shift;
-	print "$commandName v$pluginRevision (nagios-plugins 2.1.1)\n";
+	print "$commandName v$pluginRevision (nagios-plugins 2.1.4)\n";
 	print "The nagios plugins come with ABSOLUTELY NO WARRANTY. You may redistribute\ncopies of the plugins under the terms of the GNU General Public License.\nFor more information about these matters, see the file named COPYING.\n";
 }
 
